@@ -1,0 +1,13 @@
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.exe
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.deps.json
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.runtimeconfig.json
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.runtimeconfig.dev.json
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.dll
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\bin\Debug\netcoreapp3.1\ArrayQueueHeapsort.pdb
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.AssemblyInfo.cs
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.dll
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.pdb
+C:\Users\PC\source\repos\ArrayQueueHeapsort\ArrayQueueHeapsort\obj\Debug\netcoreapp3.1\ArrayQueueHeapsort.genruntimeconfig.cache
