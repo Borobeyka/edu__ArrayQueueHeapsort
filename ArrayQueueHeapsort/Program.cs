@@ -7,15 +7,21 @@ namespace ArrayQueueHeapsort
     static void Main(string[] args)
     {
       Queue queue = new Queue();
-      queue.push(1);
-      queue.push(3);
-      queue.push(5);
+      queue.push(10);
+      queue.push(-98);
       queue.push(6);
+      queue.push(7);
+      queue.push(-3);
+      queue.push(2);
+      queue.push(1);
+      queue.push(5);
+      queue.push(25);
+      queue.push(9);
+
       queue.print();
-      queue.set(2, 3);
+
+      queue.sort();
       queue.print();
-      //Console.WriteLine(queue.get(7));
-      //queue.sort();
 
     }
   }
