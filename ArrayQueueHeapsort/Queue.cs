@@ -14,7 +14,6 @@ namespace ArrayQueueHeapsort
     }
 
     public void set(int index, int elem) {
-      //index = index > getLength() - 1 ? index % getLength() : index;
       for(int i = 0; i < index; i++) push(pop());
       pop();
       push(elem);
@@ -51,8 +50,7 @@ namespace ArrayQueueHeapsort
       {
         if (i == index)
         {
-          r = pop();
-          push(r);
+          push(r = pop());
           for (int j = 0; j < getLength() - 1; j++) push(pop());
         }
         push(pop());
