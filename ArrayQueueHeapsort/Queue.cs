@@ -18,6 +18,7 @@ namespace ArrayQueueHeapsort
     ~Queue()
     {
       queue.Clear();
+      queue.TrimExcess(); // Удаление ссылок на элементы (Capacity)
       operations = 0;
     }
 
