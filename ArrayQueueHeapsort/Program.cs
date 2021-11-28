@@ -1,28 +1,34 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace ArrayQueueHeapsort
 {
   class Program
   {
+    public static long numberOfOperations = 0;
+
     static void Main(string[] args)
     {
-      Queue queue = new Queue();
-      queue.push(10);
-      queue.push(-98);
-      queue.push(6);
-      queue.push(7);
-      queue.push(-3);
-      queue.push(2);
-      queue.push(1);
-      queue.push(5);
-      queue.push(25);
-      queue.push(9);
+      Random rnd = new Random();
+      for (int i = 300, iteration = 1; i <= 3000; i += 300, iteration++)
+      {
+        Stopwatch time = new Stopwatch();
+        Console.WriteLine("[*] Итерация {0}, кол-во элементов - {1}", iteration, i);
+        
+        Queue queue = new Queue();
+        for (int j = 0; j < i; j++)
+          queue.push(rnd.Next(-70, 70 + 1));
 
-      queue.print();
+        time.Start();
+        queue.sort();
+        time.Stop();
 
-      queue.sort();
-      queue.print();
-
+        long elapsedMilliseconds = time.ElapsedMilliseconds;
+        Console.WriteLine("\tЗатрачено времени - {0}мс ({1} сек.)",
+          elapsedMilliseconds, Math.Round((double)elapsedMilliseconds / 1000));
+        Console.WriteLine("\tКоличество операций - {0}", queue.operations);
+        Console.WriteLine();
+      }
     }
   }
 }
