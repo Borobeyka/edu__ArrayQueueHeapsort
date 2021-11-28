@@ -19,9 +19,11 @@ namespace ArrayQueueHeapsort
         for (int j = 0; j < i; j++)
           queue.push(rnd.Next(-70, 70 + 1));
 
+        queue.print();
         time.Start();
         queue.sort();
         time.Stop();
+        queue.print();
 
         long elapsedMilliseconds = time.ElapsedMilliseconds;
         Console.WriteLine("\tЗатрачено времени - {0}мс ({1} сек.)",
