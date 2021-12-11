@@ -79,33 +79,29 @@ namespace ArrayQueueHeapsort
       Console.WriteLine("────────────────────────────────────────");
     }
 
-    //Преобразование поддерева с корнем i в двоичную кучу.
     public void heapify(Queue tempQueue, int s, int i) // TOTAL: 7 + 8 + (4n + 7) * 2 + 1 + 1 + 4n + 7 + 4n + 5 + 4n + 7 + 2 + 4n + 5 + 2
       // 45 + 8n + 14 + 4n + 4n + 4n + 4n = 59 + 24n
     {
-      int largest = i; //Делаем наибольший элемент корнем дерева. | + 1
-      int left = 2 * i + 1; //Левый "сын" | + 3
-      int right = 2 * i + 2; //Правый "сын" | 3
+      int largest = i; // + 1
+      int left = 2 * i + 1; // + 3
+      int right = 2 * i + 2; // 3
       // + 7
       operations += 7;
 
-      //Если левый сын больше корня.
       if (left < s && tempQueue.get(left) > tempQueue.get(largest)) // + 1 + 2 + 4n + 7
         largest = left; // + 1
 
-      //Если правый сын больше корня.
       if (right < s && tempQueue.get(right) > tempQueue.get(largest)) // + 1 + 2 + 4n + 7
         largest = right; // + 1
 
       operations += 8;
 
-      //Если наибольший элемент - не корень.
       if (largest != i) // + 1
       {
         int temp = tempQueue.get(i); // + 1 + 4n + 7
         tempQueue.set(i, tempQueue.get(largest)); // + 4n + 5 + 4n + 7 + 2
         tempQueue.set(largest, temp); // + 4n + 5 + 2
-        heapify(tempQueue, s, largest); //Преобразуем поддерево в двоичную кучу, используя рекурсию.
+        heapify(tempQueue, s, largest);
       }
     }
 
@@ -113,17 +109,13 @@ namespace ArrayQueueHeapsort
       // 12 + 59n + 24n^2 + 40n^2 + 94n = 134n^2 + 153n + 12
     {
       int s = count(); // + 1
-      //Построение кучи путём перегруппировки очереди.
       for (int i = s / 2 - 1; i >= 0; i--) // + 4 + En,0(59 + 24n)
         heapify(this, s, i); // 62 + 24n
-      //Поочерёдно извлекаем элементы очереди.
       for (int i = s - 1; i >= 0; i--) // + 3 + En,0(40n + 94)
       {
-        //Перемещаем корень в конец очереди.
         int temp = get(0); // 4n + 7 + 1 + 1
         set(0, get(i)); // + 4n + 5 + 2 + 4n + 7 + 1
         set(i, temp); // + 4n + 5 + 2 + 1
-        //Используем heapify на сокращённой куче.
         heapify(this, i, 0); // 62 + 24n
       }
     }
